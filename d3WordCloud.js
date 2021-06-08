@@ -33,28 +33,13 @@ d3.csv(path).then(function(dFrame){
     .on("end", draw);
     layout.start();     
 });
-
-// slice = 100
-
-// // Initializes the page with a default plot
-//  {
-//     // Promise Pending
-//     const dataPromise = d3.csv(path);
-//     console.log("Data Promise: ", dataPromise);
 //     console.log(data.map(function (d) { return { text: d.Words, size: d.WordCount }; }))
-//     // // set the dimensions and margins of the graph
-//     
-
-//     // // append the svg object to the body of the page
 //     var svg = d3.select("#d3-word-cloud").append("svg")
 //       .attr("width", width + margin.left + margin.right)
 //       .attr("height", height + margin.top + margin.bottom)
 //       .append("g")
 //       .attr("transform",
 //         "translate(" + margin.left + "," + margin.top + ")");
-
-//     // // Constructs a new cloud layout instance. It run an algorithm to find the position of words that suits your requirements
-//     // // Wordcloud features that are different from one word to the other must be here
 //     var layout = d3.layout.cloud()
 //       .size([width, height])
 //       .words(data.slice(0,slice).map(function (d) { return { text: d.Words, size: d.WordCount }; }))
@@ -63,9 +48,6 @@ d3.csv(path).then(function(dFrame){
 //       .fontSize(function (d) { return d.size; })      // font size of words
 //       .on("end", draw);
 //     layout.start();
-
-//     // // This function takes the output of 'layout' above and draw the words
-//     // // Wordcloud features that are THE SAME from one word to the other can be here
 //     function draw(words) {
 //       svg
 //         .append("g")
